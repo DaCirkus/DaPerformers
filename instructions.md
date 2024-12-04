@@ -8,13 +8,21 @@
 
 1. Update current privy login to use email
 
-# steps - Mobile Ui optimized
+# steps - horizontal Ui optimization on mobile
 
-1. Ui doesn't work on mobile, fix that
-2. Book ui is okay for both horizontal and vertical
-3. Buttons are missing or out of place 
-4. Text is too small on horizontal view and too big on vertical view
-5. Buttons are missplaced on mobile
+1, Ui doesn't work on mobile
+2. All the buttons besides the mint button are missing
+3. Attribute selects need to be moved to the left of the screen
+4. Background and character preview need to be moved up and to the right
+
+# steps - vertical Ui optimization on mobile
+
+0. Can scrap and focus priority on horizontal 
+1. Ui doesn't work on mobile
+2. All the buttons besides the mint button are missing
+3. Attribute selects need to be moved to the left of the screen
+4. Background and character preview need to be moved up and to the right
+5. Font needs to be made smaller to fit the page better
 
 #steps - Credit card checkout
 
