@@ -37,8 +37,9 @@ const AttributeButtons = () => {
   return (
     <div
       className="flex flex-col 
-      md:gap-y-[6px] lg:gap-y-[8px] xl:gap-y-[10px]
-      md:px-[18px] lg:px-[24px] xl:px-[30px]"
+      sm:gap-y-[4px] md:gap-y-[6px] lg:gap-y-[8px] xl:gap-y-[10px]
+      sm:px-[8px] md:px-[18px] lg:px-[24px] xl:px-[30px]
+      sm:items-start md:items-start"
     >
       <Button
         value={CACCS[cAcc]}
