@@ -1,14 +1,15 @@
 import { usePrivy } from "@privy-io/react-auth"
 import useConnectedWallet from "./useConnectedWallet"
+import { useUserProvider } from "@/providers/UserProvider"
 
-// eslint-disable-next-line no-console
 const usePreparePrivyWallet = () => {
   const { externalWallet } = useConnectedWallet() as any
-  const { connectWallet } = usePrivy()
+  const { login } = usePrivy()
+  const { isLoggedByEmail } = useUserProvider()
 
   const prepare = async () => {
-    if (!externalWallet?.address) {
-      await connectWallet()
+    if (!isLoggedByEmail && !externalWallet?.address) {
+      await login()
       return false
     }
 

@@ -7,11 +7,12 @@ import { ToastContainer } from "react-toastify"
 import UserProvider from "./UserProvider"
 
 const privyConfig: PrivyClientConfig = {
-  loginMethods: ["email"],
+  loginMethods: ["email", "wallet"],
   appearance: {
     theme: "dark",
     accentColor: "#FFFFFF",
     logo: "/images/FInalCRT.png",
+    showWalletLoginFirst: false,
   },
   embeddedWallets: {
     createOnLogin: "users-without-wallets",
